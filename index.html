@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Lenni Art</title>
+    <link rel= 'stylesheet' href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Заголовок страницы</h1>
-    <p title="Подсказка">Параграф текста</p>
+<body class="body">
+    <header class="page-header">
+        <div class="page-header_conteiner">
+            <a href="index.html" class="page-header__logo"><img src="/icons/logo.svg" alt="" class="page-header_logo_svg"></a>
+            <nav class="page-header__nav">
+                <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+                <a href="#" class="page-header__nav-link">Блог</a>
+                <a href="#" class="page-header__nav-link">О нас</a>
+                <a href="#" class="page-header__nav-link">Контакты</a>
+            </nav>
+            <a href="#" class="button page-header__user-button">Войти</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="home">
+            <header class="main-header home__main_header">
+                <h1 class="main-header_title">Арт-пространство</h1>
+                <picture class="main-header_picture"><img src="/icons/LENNI.svg" alt="" class="main-header_img"></picture>
+                <p class="main-header_text">для людей, горящих сердцем и делом
+                    место для настоящего</p>
+            </header>
+            <section class="offers home-offers"></section>
+            <section class="about home_about"></section>
+            <section class="incoming home_incoming"></section>
+            <section class="leasting home_leasting"></section>
+            <section class="contacts home_contacts"></section>
+
+        <div class="do-it home_do-it"></div>
+    </div>
+</main>
+    <footer class="page-footer"></footer>
+
 </body>
 </html>

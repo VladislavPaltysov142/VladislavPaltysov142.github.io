@@ -1,0 +1,219 @@
+.body{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style:normal;
+    line-height: 1.375;
+}
+.page-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+}
+.page-header::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 147px;
+        background-color: rgba(222,222,222,0.50) ;
+        @supports (backdrop-filter: blur(10px)){
+            backdrop-filter: blur(10px);
+            background-color: rgba(222,222,222,0.50);
+        }
+    }
+.page-header_conteiner,
+.events_conteiner{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+.page-header__logo{
+    margin-right: 237px;
+    display: inline-block;
+    width: 202px;
+    height: 147px;
+}
+.page-header_logo_svg{
+    height: 100%;
+    width: 100%;
+}
+.page-header__nav{
+    display: inline-block;
+}
+.page-header__nav-link{
+    margin: 0 25px;
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+.page-header__user-button{
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #1F1E1E;
+}
+.home{
+    padding-top: 147px;
+}
+.main-header{
+    padding: 100px 0;
+}
+.main-header_title,
+.main-header_text{
+    margin: 0 0 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: "Lora", sans-serif;
+    line-height: normal;
+    color: #1F1E1E;
+}
+.main-header_title{
+    margin: 0 0 70px;
+}
+.main-header_text{
+    margin: 0 auto;
+    max-width: 948px;
+    width: 100%;
+}
+.main-header_picture{
+    display: block;
+    padding-bottom: 70px;
+    position: relative;
+    width: 100%;
+}
+.main-header_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.main-header_picture::before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 16.927%;
+}
+.events{
+    padding-top: 147px;
+}
+.title{
+    margin: 0 0 150px;
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    background-color: #1F1E1E;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Lora",sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    color: #ffff;
+
+}
+.events_title{
+    text-align: center;
+}
+.events_conteiner{
+    flex-direction: column;
+}
+.listing{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 60px;
+}
+.listing_card-event{
+    max-width: 405px;
+    width: calc(33.333% - 40px);
+}
+.card-event{
+    box-sizing: border-box;
+}
+.card-event_link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.card-event_link:hover .card-event_title{
+    color: red;
+    text-decoration-color:red ;
+
+
+}
+.card-event_picture{
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+.card-event_picture::before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 107.160%;
+}
+.card-event_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-event_title{
+    margin: 0 0 auto;
+    min-height: 64px;
+    text-decoration: underline;
+    text-decoration-color: transparent ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #1F1E1E;
+    transition: color 0.2s, text-decoration-color 0.23s
+
+}
+.card-event_text{
+    margin: 15px 0 ;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #1F1E1E;
+}
+.card-event_time{
+    margin-top: auto;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #1F1E1E;
+}
